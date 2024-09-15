@@ -12,13 +12,19 @@ export const Home = () => {
     const half = Math.ceil(skills.length / 2)
     const skillColumn1 = skills.slice(0,half)
     const skillColumn2 = skills.slice(half)
+    
+    const styles = {
+        bgprimary:{
+            backgroundColor:'#ddd',
+        }
+    }
   return (
     <div className='container text-center' style={{marginTop: '200px'}}>
      <div className='row'>
         <div className='col-md-6'>
         <h3>Hi, Brian Kibet</h3>
         <h2 className='text-primary'>A Copywriter</h2>
-        <div className=''>
+        <div className='' style={{cursor: 'pointer'}}>
         <FaFacebook  size={25} color='blue' className='me-3'/> 
         <FaWhatsapp size={25} color='green' className='me-3'/>
          <FaPhoneSquareAlt size={25} className='me-3'/> <MdMail size={30} className='me-3'/>
@@ -26,7 +32,7 @@ export const Home = () => {
         </div>
         
         <div className='col-md-6'>
-            <img className='img-fluid bg-primary' src={headerpic} alt='home'/>
+            <img className='img-fluid ' src={headerpic} alt='home' style={styles.bgprimary}/>
         </div>
      </div>
     <div  id='about' className='about' style={{marginTop: '100px'}}>
