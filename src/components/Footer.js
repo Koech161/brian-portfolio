@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <div className='panel' style={{marginTop:'50px'}}>
         <div class="progress">
-  <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style={{width: '60%'}}>
+  <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style={{width: '80%'}}>
    loading... 80%
   </div>
 </div>

@@ -1,9 +1,10 @@
 import React from 'react'
-import headerpic from '../assets/Screenshot from 2024-09-15 21-07-53.png'
-import aboutimg from '../assets/Screenshot from 2024-09-15 21-10-11.png'
+import headerpic from '../assets/br2.png'
+import aboutimg from '../assets/brian.jpg'
 import Contact from './Contact'
 import {  FaFacebook, FaPhoneSquareAlt, FaWhatsapp } from 'react-icons/fa'
 import { MdMail } from 'react-icons/md'
+import Testimonial from './Testimonial'
 export const Home = () => {
     const skills = ['Content Creation','SEO Optimization', 'Copywriting','Research Skills', 'Grammar and Editing', 'Social Media Management',
         'Technical Writing','Creativity'
@@ -16,6 +17,7 @@ export const Home = () => {
     const styles = {
         bgprimary:{
             backgroundColor:'#ddd',
+            borderRadius : '15px'
         }
     }
   return (
@@ -77,7 +79,9 @@ export const Home = () => {
     </div>
    </div>
 </div>
+<Testimonial />
 <Contact />
+
     </div>
   )
 }
